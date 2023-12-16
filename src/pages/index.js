@@ -34,7 +34,7 @@ export default function Home() {
               {/* <AnimatedText text="Turning Vision Into Reality With Code And Design." className=" !text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl " /> */}
 
               <h1 className="text-6xl  font-extrabold xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl">
-                <span className="text-transparnet bg-clip-text bg-gradient-to-r">Hello, I'm </span>
+                <span className="text-transparnet bg-clip-text bg-gradient-to-r">{`Hello, I'm`} </span>
                 <br></br>
                 <TypeAnimation
                   sequence={[
