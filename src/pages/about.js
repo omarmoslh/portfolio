@@ -56,7 +56,7 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                Biography
+              {`Biography`}
               </h2>
               <p className="font-medium">
               {`Hi, I'm CodeBucks, a web developer and UI/UX designer with a
@@ -97,7 +97,7 @@ const about = () => {
                   <AnimatedNumbers value={50} />+
                 </span>
                 <h2 className="text-xl font-medium  capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  satisfied clients
+                  {`satisfied clients`}
                 </h2>
               </div>
 
@@ -106,7 +106,7 @@ const about = () => {
                   <AnimatedNumbers value={40} />+
                 </span>
                 <h2 className="text-xl font-medium  capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  projects completed
+                  {`projects completed`}
                 </h2>
               </div>
               <div className=" flex flex-col items-end justify-center xl:items-center">
@@ -114,7 +114,7 @@ const about = () => {
                   <AnimatedNumbers value={1} />+
                 </span>
                 <h2 className="text-xl font-medium  capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  years of experience
+                  {`years of experience`}
                 </h2>
               </div>
             </div>
