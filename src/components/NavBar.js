@@ -19,9 +19,7 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
 
       <span
-        className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-${router.asPath === href ? "w-full" : "w-0"}
- dark:bg-light`}
+        className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -40,16 +38,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
-      className={`${className} relative group text-light dark:text-dark my-2 `}
+      className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
     >
       {title}
 
       <span
-        className={`h-[2px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-${router.asPath === href ? "w-full" : "w-0"}
- dark:bg-dark`}
-      >
+        className={`h-[2px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? "w-full" : "w-0"} dark:bg-dark`}>
         &nbsp;
       </span>
     </button>
@@ -65,9 +60,9 @@ const NavBar = () => {
   };
 
   return (
-    <header className=" w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
       >
         <span
@@ -91,20 +86,20 @@ const NavBar = () => {
       </div>
       <div className="w-full flex justify-center items-center lg:hidden">
         <nav>
-          <CustomLink href="/" title="Home" className=" mr-6" />
-          <CustomLink href="/about" title="About" className=" mr-6" />
-          <CustomLink href="/projects" title="Projects" className=" mr-6" />
-          <CustomLink href="/contact" title="Contact" className=" mr-6" />
+          <CustomLink href="/" title="Home" className="mr-6" />
+          <CustomLink href="/about" title="About" className="mr-6" />
+          <CustomLink href="/projects" title="Projects" className="mr-6" />
+          <CustomLink href="/contact" title="Contact" className="mr-6" />
         </nav>
       </div>
 
       <nav className="flex items-center justify-center flex-wrap">
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className=" ml-3 flex items-center justify-center rounded-full p-1"
+          className="ml-3 flex items-center justify-center rounded-full p-1"
         >
           {mode === "dark" ? (
-            <SunIcon className={" fill-dark"} />
+            <SunIcon className={"fill-dark"} />
           ) : (
             <MoonIcon className={"fill-dark"} />
           )}
@@ -116,10 +111,8 @@ const NavBar = () => {
 initial={{scale:0, opacity:0, x: "-50%", y: "-50%"}}
 animate={{scale:1, opacity:1}}
 
-          className=" min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 
-      "
-        >
-          <nav className=" flex flex-col items-center justify-center">
+          className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
+          <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
               href="/"
               title="Home"
