@@ -8,10 +8,10 @@ const Logo = () => {
   
   
   return (
-    <div className=" flex items-center justify-center mt-2">
+    <div className="flex items-center justify-center mt-2">
       <motion.a
         href="/"
-        className=" font-Update text-3xl dark:!text-light "
+        className="font-Update text-3xl dark:!text-light"
         whileHover={{
           color: [
             "#121212",
