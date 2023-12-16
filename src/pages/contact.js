@@ -21,14 +21,14 @@ const contact = () => {
           />
           <div className="flex flex-col items-center justify-center">
             <p className="flex flex-col text-center my-4 text-xl font-medium md:text-sm sm:text-xs pb-6">
-              I'm currently open to freelance and actively looking for full-time
+              {`I'm currently open to freelance and actively looking for full-time
               job opportunties, so if you like what you've seen please don't
-              hesitate to get in touch!
+              hesitate to get in touch!`}
             </p>
             <p className="flex flex-col text-center my-4 text-xl font-medium md:text-sm sm:text-xs pb-6">
-              If you have any questions or would just like to say hi, my inbox
+  {`If you have any questions or would just like to say hi, my inbox
               is always open and I'll endeavour to get back to you as soon as I
-              can.
+              can.`}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center">
