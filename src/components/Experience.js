@@ -52,35 +52,16 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
+            position="Front End Developer"
+            company="freelancer"
+            companyLink="https://portfolio-omarmoslhs-projects.vercel.app/"
+            time="2024"
+            address="Cairo, Egypt"
+            work="Frontend developer with knowledge in JavaScript, HTML, CSS, and
+            responsive design, seeks the position of Front-end Web Developer."
           />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
-          />
+        
+          
         </ul>
       </div>
     </div>

@@ -5,18 +5,19 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/ciambella.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import project2 from "../../public/images/projects/ecommerce.jpg";
+import project3 from "../../public/images/projects/weather-app.jpg";
+import project4 from "../../public/images/projects/movies.jpg";
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-      <div
-        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
-      />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
@@ -70,9 +71,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:border-light dark:bg-dark xs:p-4">
-      <div
-        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
-      />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
@@ -138,43 +137,43 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Donuts Store App"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
+                summary="A feature-rich Donuts Store App using React, Tailwind CSS, Context API, React Router and Recharts. You can browse the menu and purchase products."
+                link="https://ciambella.vercel.app/"
+                github="https://github.com/omarmoslh/Ciambella"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
+                title="Weather App"
+                img={project3}
+                summary=""
+                link="https://weather-app-olive-gamma.vercel.app/"
+                github="https://github.com/omarmoslh/weather-app"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
+                title="Movies Store"
+                img={project4}
+                summary=""
+                link="https://movies-khaki-omega.vercel.app/"
+                github="https://github.com/omarmoslh/movies"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
+                title="E-commerce Web Application"
+                img={project2}
+                summary="A feature-rich Donuts Store App using React, Tailwind CSS, Context API, React Router and Recharts. You can browse the menu and purchase products."
+                link="https://ecommerce-4981c.web.app/"
+                github="https://github.com/omarmoslh/e-commerce"
                 type="Featured Project"
               />
             </div>

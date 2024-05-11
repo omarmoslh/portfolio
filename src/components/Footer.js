@@ -1,12 +1,21 @@
 import React from "react";
 import Layout from "./Layout";
 import { motion } from "framer-motion";
-import { TwitterIcon, GithubIcon, LinkedInIcon } from "./Icons";
+import { TwitterIcon, GithubIcon, LinkedInIcon, FacebookIcon } from "./Icons";
 const Footer = () => {
   return (
     <footer className="w-full font-medium text-lg dark:text-light sm:text-base">
       <Layout className="py-8 flex items-center justify-center flex-col">
         <div className="flex items-center justify-center flex-wrap py-2">
+        <motion.a
+            href="https://www.facebook.com/omarmosle7"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 mx-3"
+          >
+            <FacebookIcon />
+          </motion.a>
           <motion.a
             href="https://www.facebook.com/omarmosle7"
             target={"_blank"}
@@ -17,7 +26,7 @@ const Footer = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://github.com/omarmoslh"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -26,7 +35,7 @@ const Footer = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/omar-mosleh/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
