@@ -11,6 +11,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import project2 from "../../public/images/projects/ecommerce.jpg";
 import project3 from "../../public/images/projects/weather-app.jpg";
 import project4 from "../../public/images/projects/movies.jpg";
+import project5 from '../../public/images/projects/company.jpg'
 
 const FramerImage = motion(Image);
 
@@ -148,11 +149,11 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Weather App"
-                img={project3}
+                title="Company Website"
+                img={project5}
                 summary=""
-                link="https://weather-app-olive-gamma.vercel.app/"
-                github="https://github.com/omarmoslh/weather-app"
+                link="https://tflorentina.vercel.app/"
+                github="https://github.com/omarmoslh/react-project"
                 type="Featured Project"
               />
             </div>
@@ -180,11 +181,11 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
+                title="Weather App"
+                img={project3}
+                summary=""
+                link="https://weather-app-olive-gamma.vercel.app/"
+                github="https://github.com/omarmoslh/weather-app"
                 type="Featured Project"
               />
             </div>
