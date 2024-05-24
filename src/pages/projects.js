@@ -160,11 +160,11 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Movies Store"
+                title="Movies App"
                 img={project4}
                 summary=""
-                link="https://movies-khaki-omega.vercel.app/"
-                github="https://github.com/omarmoslh/movies"
+                link="https://movie-app-rose-two.vercel.app/"
+                github="https://github.com/omarmoslh/movieApp"
                 type="Featured Project"
               />
             </div>
